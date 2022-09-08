@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+
+    <svg width="100%" height="100%" id="svg" class="svg-top" viewBox="0 0 1440 600" xmlns="http://www.w3.org/2000/svg"
+        class="transition duration-300 ease-in-out delay-150">
+        <defs>
+            <linearGradient id="gradient" x1="5%" y1="28%" x2="95%" y2="72%">
+                <stop offset="5%" stop-color="#eb144cff"></stop>
+                <stop offset="95%" stop-color="#ff6900ff"></stop>
+            </linearGradient>
+        </defs>
+        <path
+            d="M 0,600 C 0,600 0,300 0,300 C 243.5,246.5 487,193 727,193 C 967,193 1203.5,246.5 1440,300 C 1440,300 1440,600 1440,600 Z"
+            stroke="none" stroke-width="0" fill="url(#gradient)"
+            class="transition-all duration-300 ease-in-out delay-150 path-0" transform="rotate(-180 720 300)"></path>
+    </svg>
+
+    <form action="POST" class="reg_form">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="svg">
+            <path fill="#FFAF32" fill-opacity="1"
+                d="M0,96L60,106.7C120,117,240,139,360,170.7C480,203,600,245,720,234.7C840,224,960,160,1080,149.3C1200,139,1320,181,1380,202.7L1440,224L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+
+            </path>
+        </svg>
+
+        <div class="form-container">
+
+            <span class="back">
+                <span><i class='bx bx-chevron-left bx-fade-left icon'></i><span>Back</span></span>
+            </span>
+
+            <div class="header">
+                <h4>Hello!</h4> &nbsp;
+                <p>Create Account</p>
+            </div>
+
+            <div class="form_group name">
+                <div class="left">
+                    <input type="text" name="firstname" id="firstname" class="form-control" placeholder="First name"
+                        required>
+                    <label for="firstname" class="form-label">First name</label>
+                </div>
+
+                <div class="right">
+                    <input type="text" name="lastname" id="lastname" class="form-control" placeholder="Last name"
+                        required>
+                    <label for="lastname" class="form-label">Last name</label>
+                </div>
+
+            </div>
+
+            <div class="form_group">
+                <input type="email" name="email" id="email" class="form-control" autocomplete="off" placeholder="Email"
+                    required>
+                <label for="email" class="form-label">Email</label>
+            </div>
+
+            <div class="form_group">
+                <input type="password" name="password" id="password" class="form-control" autocomplete="off"
+                    placeholder="password" required>
+                <label for="password" class="form-label">Password</label>
+            </div>
+
+            <div class="form_group">
+                <input type="password" name="confirm_pwd" id="confirm_pwd" class="form-control" autocomplete="off"
+                    placeholder="confirm Password" required>
+                <label for="confirm_pwd" class="form-label">Confirm Password</label>
+            </div>
+
+            <div class="form_group gender">
+                <labe>Gender</label>
+
+                    <label class="container">Male
+                        <input type="radio" checked="checked" name="gender">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="container">Female
+                        <input type="radio" name="gender">
+                        <span class="checkmark"></span>
+                    </label>
+
+            </div>
+
+            <div class="form_group">
+                <p class="register-options">Or Register with social media account</p>
+
+                <ul class="social-icons">
+                    <li><a href="#"><i class='bx bxl-twitter twitter'></i></a></li>
+                    <li><a href="#"><i class='bx bxl-facebook fb'></i></a></li>
+                    <li><a href="#"><i class='bx bxl-instagram instagram'></i></a></li>
+                    <li><a href="#"><i class='bx bxl-google google'></i></a></li>
+                </ul>
+            </div>
+
+            <div class="form_group">
+                <button type="submit" class="btn">Register</button>
+            </div>
+
+            <p class="have-no-acct">
+                Already have an account? <span class="signin-link"><a href="#">Signin</a></span>
+            </p>
+        </div>
+    </form>
+
+</body>
+
+</html>
